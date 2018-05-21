@@ -1,9 +1,7 @@
-var form;
-
 document.addEventListener('DOMContentLoaded',()=>{
   console.log("Page loaded!")
 
-  form = document.querySelector('#input-form')
+  const form = document.querySelector('#input-form')
   form.addEventListener('submit',handleInputForm)
 
 })
@@ -22,5 +20,9 @@ const handleInputForm = function(event){
 
   reading_list.appendChild(item);
 
-  form.reset()
+  resetForm();
+}
+
+function resetForm(){
+  document.querySelector('#input-form').reset();
 }
