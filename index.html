@@ -12,23 +12,23 @@
 
     <form id='input-form'>
       <label>Title:</label>
-      <input id='title' type='text'>
+      <input id='title' type='text' required>
 
       <label>Author:</label>
       <input id='author' type='text'>
 
       <label>Category:</label>
-      <input type="radio" name="category" value="Book">
+      <input type="radio" name="category" value="Book" required>
       <label>Book</label>
 
-      <input type="radio" name="category" value="Article">
+      <input type="radio" name="category" value="Article" required>
       <label>Article</label>
 
-      <input type="radio" name="category" value="Blog post">
+      <input type="radio" name="category" value="Blog post" required>
       <label>Blog Post</label>
 
       <label>Genre</label>
-      <select id='genre'>
+      <select id='genre' required>
         <option value='Fantasy'>Fantasy</option>
         <option value='Reference'>Reference</option>
         <option value='Sci-Fi'>Sci-Fi</option>
