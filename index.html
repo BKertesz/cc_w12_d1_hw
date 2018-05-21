@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Reading List</title>
+    <script src="app.js">
+
+    </script>
+  </head>
+  <body>
+    <h1>Reading List</h1>
+    <form id='input-form'>
+      <label>Title:</label>
+      <input id='title' type='text'>
+
+      <label>Author:</label>
+      <input id='author' type='text'>
+
+      <label>Category:</label>
+      <input type="radio" name="category" value="Book">
+      <label>Book</label>
+
+      <input type="radio" name="category" value="Article">
+      <label>Article</label>
+
+      <input type="radio" name="category" value="Blog post">
+      <label>Blog Post</label>
+
+      <button type="submit" name="button">Submit</button>
+
+
+    </form>
+  <hr/>
+  <h3>Title :: Author :: Category</h3>
+    <ul id="reading-list"></ul>
+
+  </body>
+</html>
