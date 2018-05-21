@@ -12,9 +12,15 @@ document.addEventListener('DOMContentLoaded',()=>{
 
 const handleInputForm = function(event){
   event.preventDefault();
+
   const reading_list = document.querySelector("#reading-list")
+
+
   const item = document.createElement('li')
-  item.textContent = `${this.title.value} by ${this.author.value} as a ${this.category.value}`
+
+  item.textContent = `${this.title.value} -- ${this.author.value} -- ${this.category.value} -- ${this.genre.value}`
+
   reading_list.appendChild(item);
+
   form.reset()
 }

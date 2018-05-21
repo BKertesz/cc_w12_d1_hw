@@ -9,6 +9,7 @@
   </head>
   <body>
     <h1>Reading List</h1>
+
     <form id='input-form'>
       <label>Title:</label>
       <input id='title' type='text'>
@@ -26,12 +27,19 @@
       <input type="radio" name="category" value="Blog post">
       <label>Blog Post</label>
 
+      <label>Genre</label>
+      <select id='genre'>
+        <option value='Fantasy'>Fantasy</option>
+        <option value='Reference'>Reference</option>
+        <option value='Sci-Fi'>Sci-Fi</option>
+      </select>
+
       <button type="submit" name="button">Submit</button>
 
 
     </form>
   <hr/>
-  <h3>Title :: Author :: Category</h3>
+  <h3>Title :: Author :: Category :: Genre</h3>
     <ul id="reading-list"></ul>
 
   </body>
