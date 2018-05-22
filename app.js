@@ -4,6 +4,9 @@ document.addEventListener('DOMContentLoaded',()=>{
   const form = document.querySelector('#input-form')
   form.addEventListener('submit',handleInputForm)
 
+  const deleteButton = document.querySelector('#delete-all')
+  deleteButton.addEventListener('click',handleDeleteButton)
+
 })
 
 
@@ -25,4 +28,9 @@ const handleInputForm = function(event){
 
 function resetForm(){
   document.querySelector('#input-form').reset();
+}
+
+function handleDeleteButton(event){
+  const reading_list= document.querySelector('#reading-list')
+  reading_list.textContent = '';
 }
