@@ -14,6 +14,9 @@ document.addEventListener('DOMContentLoaded',()=>{
 const handleInputForm = function(event){
   event.preventDefault();
 
+  const infoToValidate = [this.title.value,this.author.value,this.category.value, this.genre.value]
+  if(handleEmptyInput(infoToValidate)) return;
+
   const reading_list = document.querySelector("#reading-list")
 
 
@@ -33,4 +36,8 @@ function resetForm(){
 function handleDeleteButton(event){
   const reading_list= document.querySelector('#reading-list')
   reading_list.textContent = '';
+}
+
+const handleEmptyInput = function(infoToValidate){
+  return infoToValidate.some((value) => value === '');
 }
