@@ -29,11 +29,11 @@ const handleInputForm = function(event){
   resetForm();
 }
 
-function resetForm(){
+const resetForm = function(){
   document.querySelector('#input-form').reset();
 }
 
-function handleDeleteButton(event){
+const handleDeleteButton = function(event){
   const reading_list= document.querySelector('#reading-list')
   reading_list.textContent = '';
 }
